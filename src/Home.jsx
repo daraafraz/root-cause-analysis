@@ -17,7 +17,7 @@ function Home() {
           align="center" 
           sx={{ mb: 6, fontWeight: 300, color: '#333' }}
         >
-          MUI Playground
+          Root Cause Analysis
         </Typography>
 
         <Stack spacing={2} alignItems="center">

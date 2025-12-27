@@ -1,12 +1,15 @@
-# MUI System Playground
+# Root Cause Analysis
 
-A playground project for experimenting with MUI System - a collection of CSS utilities for rapidly laying out custom designs.
+A root cause analysis application built with React and Material-UI, featuring time series visualization and alert correlation.
 
 ## What's Installed
 
 - **React** (v19.2.0) - The UI library
-- **@mui/system** (v7.3.3) - MUI's CSS utilities system
+- **@mui/material** (v7.3.4) - Material-UI component library
+- **@mui/x-charts** (v8.14.1) - Chart components for data visualization
+- **@mui/x-date-pickers** (v8.14.1) - Date and time picker components
 - **@emotion/react & @emotion/styled** - The styling engine (Emotion is MUI's default)
+- **react-router-dom** (v7.9.4) - Client-side routing
 - **Vite** - Fast build tool and dev server
 
 ## Getting Started
@@ -21,44 +24,24 @@ npm run dev
 ## Project Structure
 
 ```
-mui-playground/
+root-cause-analysis/
 ├── index.html          # Entry HTML file
 ├── src/
 │   ├── main.jsx       # React app entry point
-│   └── App.jsx        # Main app component with MUI System examples
+│   ├── App.jsx        # Main app component with routing
+│   ├── Home.jsx       # Home page with navigation
+│   ├── KitchenSink.jsx # MUI component showcase
+│   └── RootCause.jsx  # Root cause analysis tool
 ├── vite.config.js     # Vite configuration
 └── package.json       # Dependencies and scripts
 ```
 
-## Key Features Demonstrated
+## Features
 
-The `App.jsx` file includes examples of:
-
-- **Responsive Design** - Using the `sx` prop with responsive values
-- **Layout Utilities** - Grid, flexbox, spacing, etc.
-- **Hover Effects** - Interactive styling with pseudo-selectors
-- **Theme Colors** - Using MUI's color system
-- **Typography** - Responsive font sizes and styling
-- **Component Variants** - Different button styles
-
-## The `sx` Prop
-
-The `sx` prop is the heart of MUI System. It lets you write CSS directly in your JSX with additional superpowers:
-
-```jsx
-<Box
-  sx={{
-    p: 4,                    // padding: 32px (4 * 8px theme spacing)
-    bgcolor: 'primary.main', // Use theme colors
-    fontSize: { xs: '1rem', md: '2rem' }, // Responsive values
-    '&:hover': {             // Pseudo-selectors
-      bgcolor: 'primary.dark'
-    }
-  }}
->
-  Content
-</Box>
-```
+- **Root Cause Analysis Tool** - Analyze power supply instability with time series visualization
+- **MUI Component Showcase** - Comprehensive demonstration of Material-UI components
+- **Time Series Charts** - Interactive charts with date range selection and alert correlation
+- **Alert Trigger Management** - Configure and visualize alert triggers with expression-based rules
 
 ## Available Scripts
 
@@ -66,16 +49,12 @@ The `sx` prop is the heart of MUI System. It lets you write CSS directly in your
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 
-## Next Steps
+## Technologies Used
 
-1. Open the app in your browser
-2. Explore the examples in `src/App.jsx`
-3. Try modifying the `sx` props to see changes in real-time
-4. Check out the [MUI System documentation](https://mui.com/system/getting-started/) for more features
-
-## Resources
-
-- [MUI System Docs](https://mui.com/system/getting-started/)
-- [The sx Prop](https://mui.com/system/getting-started/the-sx-prop/)
-- [Emotion Documentation](https://emotion.sh/docs/introduction)
+- **React** (v19.2.0) - UI library
+- **Material-UI** (v7.3.4) - Component library
+- **MUI X Charts** - Data visualization
+- **MUI X Date Pickers** - Date selection components
+- **React Router** - Navigation
+- **Vite** - Build tool and dev server
 
